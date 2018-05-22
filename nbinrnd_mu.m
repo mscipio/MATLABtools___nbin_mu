@@ -16,7 +16,7 @@ function rnd = nbinrnd_mu(mu,alpha,varargin)
 %|
 %|  Last revision:
 %|  22 May 2018
-%|  Michele Scipioni, Univeristy of Pisa
+%|  Michele Scipioni, University of Pisa
 %|
 %|====================================================================================
 

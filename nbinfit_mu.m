@@ -20,7 +20,7 @@ function [parmhat, parmci] = nbinfit_mu(x, xbar, abar, alpha, opt)
 %|
 %|  Last revision:
 %|  22 May 2018
-%|  Michele Scipioni, Univeristy of Pisa
+%|  Michele Scipioni, University of Pisa
 %|
 %|====================================================================================
 

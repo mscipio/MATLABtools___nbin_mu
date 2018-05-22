@@ -11,7 +11,7 @@ function rnd = rnd_negbinom(mu, alpha, m, n)
 %|
 %|  Last revision:
 %|  22 May 2018
-%|  Michele Scipioni, Univeristy of Pisa
+%|  Michele Scipioni, University of Pisa
 %|
 %|====================================================================================
 

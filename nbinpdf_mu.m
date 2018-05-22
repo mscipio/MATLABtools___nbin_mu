@@ -13,7 +13,7 @@ function y = nbinpdf_mu(x,mu,alpha)
 %|
 %|  Last revision:
 %|  22 May 2018
-%|  Michele Scipioni, Univeristy of Pisa
+%|  Michele Scipioni, University of Pisa
 %|
 %|====================================================================================
 
