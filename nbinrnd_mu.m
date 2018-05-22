@@ -2,11 +2,11 @@ function rnd = nbinrnd_mu(mu,alpha,varargin)
 %|====================================================================================
 %|NBINRND_MU Random arrays from the negative binomial distribution.
 %|   
-%|   RND = NBINRND_MU(R,P,M,N) 	returns an array of random numbers chosen from a
-%|   							from a negative binomial distribution with parameters 
-%|   							R and P. The size of RND is the common size of R and  
-%|   							P if both are arrays.  If either parameteris a scalar, 
-%|								the size of RND is the size of the other parameter.
+%|   RND = NBINRND_MU(R,P,M,N) returns an array of random numbers chosen from a
+%|                             from a negative binomial distribution with parameters 
+%|                             R and P. The size of RND is the common size of R and  
+%|                             P if both are arrays.  If either parameteris a scalar, 
+%|                             the size of RND is the size of the other parameter.
 %|   
 %|   RND = NBINRND_MU(R,P,M,N,...) or RND = NBINRND_MU(R,P,[M,N,...]) returns an
 %|   M-by-N-by-... array. 

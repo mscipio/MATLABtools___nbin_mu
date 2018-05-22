@@ -2,21 +2,21 @@ function [parmhat, parmci] = nbinfit_mu(x, xbar, abar, alpha, opt)
 %|====================================================================================
 %|NBINFIT_MU Parameter estimates for negative binomial data.
 %|
-%|   NBINFIT_MU(X) 	Returns the maximum likelihood estimates of the parameters of the
-%|   				negative binomial distribution given the data in the vector, X.
+%|   NBINFIT_MU(X) Returns the maximum likelihood estimates of the parameters of the
+%|                 negative binomial distribution given the data in the vector, X.
 %|   
 %|   [PARMHAT, PARMCI] = NBINFIT_MU(X,ALPHA) returns MLEs and 100(1-ALPHA) percent 
-%|   										 confidence intervals given the data.  
-%|   										 By default, the optional parameter 
-%|											 ALPHA = 0.05 corresponding to 95% conf. 
-%|											 intervals.
+%|                                           confidence intervals given the data.  
+%|                                           By default, the optional parameter 
+%|                                           ALPHA = 0.05 corresponding to 95% conf. 
+%|                                           intervals.
 %|
-%|   [ ... ] = NBINFIT_MU( ..., OPTIONS)	specifies control parameters for the
-%|   										numerical optimization used to compute 
-%|											ML estimates.  This argument can be created
-%|    										by a call to STATSET.  
-%|											See STATSET('nbinfit_mu') for parameter
-%|   										names and default values.
+%|   [ ... ] = NBINFIT_MU( ..., OPTIONS) specifies control parameters for the
+%|                                       numerical optimization used to compute 
+%|                                       ML estimates.  This argument can be created
+%|                                       by a call to STATSET.  
+%|                                       See STATSET('nbinfit_mu') for parameter
+%|                                       names and default values.
 %|
 %|  Last revision:
 %|  22 May 2018

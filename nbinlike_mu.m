@@ -2,17 +2,17 @@ function [logL, avar] = nbinlike_mu(params, data)
 %|====================================================================================
 %|NBINLIKE_MU Negative of the negative binomial log-likelihood function.
 %|
-%|   L = NBINLIKE_MU(PARAMS,DATA) 	returns the negative of the negative binomial
-%|   								log-likelihood function for the parameters
-%|   								PARAMS(1) = \mu and PARAMS(2) = \alpha, given DATA.
+%|   L = NBINLIKE_MU(PARAMS,DATA) returns the negative of the negative binomial
+%|                                log-likelihood function for the parameters
+%|                                PARAMS(1) = \mu and PARAMS(2) = \alpha, given DATA.
 %|
 %|   [LOGL, AVAR] = NBINLIKE_MU(PARAMS,DATA) adds the inverse of Fisher's information 
-%|    										 matrix, AVAR. If the input parameter 
-%|   										 values in PARAMS are the maximum likelihood
-%|    										 estimates, the diagonal elements of AVAR
-%|											 are their asymptotic variances.  
-%|											 AVAR is based on the observed Fisher's
-%|    										 information, not the expected information.
+%|                                           matrix, AVAR. If the input parameter 
+%|                                           values in PARAMS are the maximum likelihood
+%|                                           estimates, the diagonal elements of AVAR
+%|                                           are their asymptotic variances.  
+%|                                           AVAR is based on the observed Fisher's
+%|                                           information, not the expected information.
 %|
 %|   NBINLIKE_MU is a utility function for maximum likelihood estimation. 
 %|
