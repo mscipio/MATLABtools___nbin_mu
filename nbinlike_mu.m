@@ -1,20 +1,26 @@
 function [logL, avar] = nbinlike_mu(params, data)
-%NBINLIKE Negative of the negative binomial log-likelihood function.
-%   L = NBINLIKE(PARAMS,DATA) returns the negative of the negative binomial
-%   log-likelihood function for the parameters PARAMS(1) = R and PARAMS(2)
-%   = P, given DATA.
-%
-%   [LOGL, AVAR] = NBINLIKE(PARAMS,DATA) adds the inverse of Fisher's
-%   information matrix, AVAR. If the input parameter values in PARAMS
-%   are the maximum likelihood estimates, the diagonal elements of AVAR
-%   are their asymptotic variances.  AVAR is based on the observed
-%   Fisher's information, not the expected information.
-%
-%   NBINLIKE is a utility function for maximum likelihood estimation. 
-%   See also BETALIKE, GAMLIKE, NBINFIT, NORMLIKE, MLE, WBLLIKE.
-
-%   Copyright 1993-2004 The MathWorks, Inc. 
-
+%|====================================================================================
+%|NBINLIKE_MU Negative of the negative binomial log-likelihood function.
+%|
+%|   L = NBINLIKE_MU(PARAMS,DATA) 	returns the negative of the negative binomial
+%|   								log-likelihood function for the parameters
+%|   								PARAMS(1) = \mu and PARAMS(2) = \alpha, given DATA.
+%|
+%|   [LOGL, AVAR] = NBINLIKE_MU(PARAMS,DATA) adds the inverse of Fisher's information 
+%|    										 matrix, AVAR. If the input parameter 
+%|   										 values in PARAMS are the maximum likelihood
+%|    										 estimates, the diagonal elements of AVAR
+%|											 are their asymptotic variances.  
+%|											 AVAR is based on the observed Fisher's
+%|    										 information, not the expected information.
+%|
+%|   NBINLIKE_MU is a utility function for maximum likelihood estimation. 
+%|
+%|  Last revision:
+%|  22 May 2018
+%|  Michele Scipioni, Univeristy of Pisa
+%|
+%|====================================================================================
 
 if nargin < 2, 
     error(message('stats:nbinlike:TooFewInputs')); 

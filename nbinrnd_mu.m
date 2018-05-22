@@ -1,19 +1,24 @@
 function rnd = nbinrnd_mu(mu,alpha,varargin)
-%NBINRND Random arrays from the negative binomial distribution.
-%   RND = NBINRND(R,P,M,N) returns an array of random numbers chosen from a
-%   negative binomial distribution with parameters R and P.  The size of RND
-%   is the common size of R and P if both are arrays.  If either parameter
-%   is a scalar, the size of RND is the size of the other parameter.
-%   
-%   RND = NBINRND(R,P,M,N,...) or RND = NBINRND(R,P,[M,N,...]) returns an
-%   M-by-N-by-... array. 
-%
-%   See also NBINCDF, NBININV, NBINPDF, NBINSTAT, RANDOM.
-
-%   NBINRND uses either a sum of geometric random values, or a
-%   Poisson/gamma mixture.
-
-%   Copyright 1993-2011 The MathWorks, Inc.
+%|====================================================================================
+%|NBINRND_MU Random arrays from the negative binomial distribution.
+%|   
+%|   RND = NBINRND_MU(R,P,M,N) 	returns an array of random numbers chosen from a
+%|   							from a negative binomial distribution with parameters 
+%|   							R and P. The size of RND is the common size of R and  
+%|   							P if both are arrays.  If either parameteris a scalar, 
+%|								the size of RND is the size of the other parameter.
+%|   
+%|   RND = NBINRND_MU(R,P,M,N,...) or RND = NBINRND_MU(R,P,[M,N,...]) returns an
+%|   M-by-N-by-... array. 
+%|
+%|   NBINRND_MU uses either a sum of geometric random values, or a
+%|   Poisson/gamma mixture.
+%|
+%|  Last revision:
+%|  22 May 2018
+%|  Michele Scipioni, Univeristy of Pisa
+%|
+%|====================================================================================
 
 
 if nargin < 2

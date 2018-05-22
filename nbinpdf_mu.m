@@ -1,15 +1,21 @@
 function y = nbinpdf_mu(x,mu,alpha)
-% NBINPDF Negative binomial probability density function.
-%   Y = NBINPDF_MU(X,R,P) returns the negative binomial probability density 
-%   function with parameters R and P at the values in X.
-%   Note that the density function is zero unless X is an integer.
-%
-%   The size of Y is the common size of the input arguments. A scalar input  
-%   functions as a constant matrix of the same size as the other inputs.    
-%
-%   See also NBINCDF, NBINFIT, NBININV, NBINLIKE, NBINRND, NBINSTAT, PDF.
-
-%   Copyright 1993-2007 The MathWorks, Inc.
+%|====================================================================================
+%|NBINPDF_MU Negative binomial probability density function.
+%|
+%|   Y = NBINPDF_MU(X,MU,ALPHA) returns the negative binomial probability density 
+%|   							function with parameters R and P at the values in X.
+%|   							Note that the density function is zero unless X is 
+%|								an integer.
+%|
+%|	 NOTE:
+%|   The size of Y is the common size of the input arguments. A scalar input  
+%|   functions as a constant matrix of the same size as the other inputs.    
+%|
+%|  Last revision:
+%|  22 May 2018
+%|  Michele Scipioni, Univeristy of Pisa
+%|
+%|====================================================================================
 
 
 if nargin < 3

@@ -1,4 +1,20 @@
 function rnd = rnd_negbinom(mu, alpha, m, n)
+%|====================================================================================
+%|RND_NEGBINOM Generate a MxN matrix with samples drawn from NEGBIN_MU distribution
+%|
+%|    RND = RND_NEGBINOM(MU,ALPHA,M,N)	returns an array of random numbers chosen 
+%|    									from the Negative Binomial distribution with 
+%|										parameters MU and ALPHA. 
+%|										The size of RND is [M,N], with M,N scalars.
+%| 
+%|    See also nbinrnd_mu, nbinfit_mu, nbinpdf_mu, nbinlike_mu, random.
+%|
+%|  Last revision:
+%|  22 May 2018
+%|  Michele Scipioni, Univeristy of Pisa
+%|
+%|====================================================================================
+
 
 r = 1/alpha;
 p = r/(r+mu);
